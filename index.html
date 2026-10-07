@@ -1,0 +1,1814 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Oscar's HVAC Service | Heating & Cooling Service in Durham, NC</title>
+  <meta name="description" content="Contact Oscar's HVAC Service in Durham, NC for residential heating and cooling service, HVAC repair, maintenance, and installation. Call (919) 480-3430 or request service online.">
+  <meta name="theme-color" content="#0f2f4f">
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+  <style>
+    /* =========================================================
+       OSCAR'S HVAC SERVICE — GHL-SAFE, NAMESPACED STYLES
+       ========================================================= */
+    .oscar-hvac-page,
+    .oscar-hvac-page * {
+      box-sizing: border-box;
+    }
+
+    .oscar-hvac-page {
+      --oh-navy: #0f2f4f;
+      --oh-blue: #216da8;
+      --oh-blue-soft: #eaf4fb;
+      --oh-orange: #e87924;
+      --oh-orange-dark: #c95e11;
+      --oh-text: #1b2630;
+      --oh-muted: #5d6b78;
+      --oh-line: #dce5ec;
+      --oh-light: #f6f9fb;
+      --oh-white: #ffffff;
+      --oh-shadow: 0 12px 32px rgba(15, 47, 79, .10);
+      --oh-radius: 10px;
+      --oh-max: 1180px;
+      color: var(--oh-text);
+      background: var(--oh-white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: clip;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .oscar-hvac-page img,
+    .oscar-hvac-page svg {
+      max-width: 100%;
+      display: block;
+    }
+
+    .oscar-hvac-page a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .oscar-hvac-page button,
+    .oscar-hvac-page input,
+    .oscar-hvac-page select,
+    .oscar-hvac-page textarea {
+      font: inherit;
+    }
+
+    .oscar-hvac-page .oh-container {
+      width: min(var(--oh-max), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .oscar-hvac-page .oh-section {
+      padding: 72px 0;
+    }
+
+    .oscar-hvac-page .oh-section--light {
+      background: var(--oh-light);
+    }
+
+    .oscar-hvac-page .oh-kicker {
+      margin: 0 0 8px;
+      color: var(--oh-blue);
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    .oscar-hvac-page .oh-heading {
+      margin: 0;
+      color: var(--oh-navy);
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -.025em;
+    }
+
+    .oscar-hvac-page .oh-lead {
+      margin: 16px 0 0;
+      color: var(--oh-muted);
+      font-size: 18px;
+      max-width: 700px;
+    }
+
+    .oscar-hvac-page .oh-btn {
+      min-height: 48px;
+      padding: 12px 20px;
+      border: 2px solid transparent;
+      border-radius: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 800;
+      line-height: 1.2;
+      cursor: pointer;
+      transition: transform .18s ease, background-color .18s ease, border-color .18s ease, color .18s ease;
+    }
+
+    .oscar-hvac-page .oh-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .oscar-hvac-page .oh-btn--primary {
+      color: var(--oh-white);
+      background: var(--oh-orange);
+      border-color: var(--oh-orange);
+    }
+
+    .oscar-hvac-page .oh-btn--primary:hover {
+      background: var(--oh-orange-dark);
+      border-color: var(--oh-orange-dark);
+    }
+
+    .oscar-hvac-page .oh-btn--secondary {
+      color: var(--oh-navy);
+      background: var(--oh-white);
+      border-color: #b9c9d6;
+    }
+
+    .oscar-hvac-page .oh-btn--secondary:hover {
+      border-color: var(--oh-blue);
+      color: var(--oh-blue);
+    }
+
+    .oscar-hvac-page .oh-btn:focus-visible,
+    .oscar-hvac-page a:focus-visible,
+    .oscar-hvac-page button:focus-visible,
+    .oscar-hvac-page input:focus-visible,
+    .oscar-hvac-page select:focus-visible,
+    .oscar-hvac-page textarea:focus-visible {
+      outline: 3px solid rgba(33, 109, 168, .34);
+      outline-offset: 3px;
+    }
+
+    /* TOP BAR */
+    .oscar-hvac-page .oh-topbar {
+      background: var(--oh-navy);
+      color: var(--oh-white);
+      font-size: 14px;
+    }
+
+    .oscar-hvac-page .oh-topbar-inner {
+      min-height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .oscar-hvac-page .oh-topbar-list {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .oscar-hvac-page .oh-topbar a {
+      font-weight: 700;
+    }
+
+    /* HEADER */
+    .oscar-hvac-page .oh-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, .97);
+      border-bottom: 1px solid var(--oh-line);
+      backdrop-filter: blur(8px);
+    }
+
+    .oscar-hvac-page .oh-header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .oscar-hvac-page .oh-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      color: var(--oh-navy);
+      font-weight: 900;
+    }
+
+    .oscar-hvac-page .oh-brand-mark {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 auto;
+    }
+
+    .oscar-hvac-page .oh-brand-text {
+      font-size: 18px;
+      line-height: 1.05;
+    }
+
+    .oscar-hvac-page .oh-nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-left: auto;
+    }
+
+    .oscar-hvac-page .oh-nav a:not(.oh-btn) {
+      color: #344453;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .oscar-hvac-page .oh-nav a:not(.oh-btn):hover {
+      color: var(--oh-blue);
+    }
+
+    .oscar-hvac-page .oh-menu-toggle {
+      width: 46px;
+      height: 42px;
+      border: 1px solid var(--oh-line);
+      border-radius: 7px;
+      background: var(--oh-white);
+      color: var(--oh-navy);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .oscar-hvac-page .oh-menu-icon,
+    .oscar-hvac-page .oh-menu-icon::before,
+    .oscar-hvac-page .oh-menu-icon::after {
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      display: block;
+      position: relative;
+      content: "";
+    }
+
+    .oscar-hvac-page .oh-menu-icon::before {
+      position: absolute;
+      top: -6px;
+    }
+
+    .oscar-hvac-page .oh-menu-icon::after {
+      position: absolute;
+      top: 6px;
+    }
+
+    /* HERO */
+    .oscar-hvac-page .oh-hero {
+      background:
+        linear-gradient(90deg, rgba(15,47,79,.96) 0%, rgba(15,47,79,.91) 42%, rgba(15,47,79,.14) 73%, rgba(15,47,79,.04) 100%),
+        url("https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&w=1600") center 38% / cover no-repeat;
+      color: var(--oh-white);
+      min-height: 610px;
+      display: flex;
+      align-items: center;
+    }
+
+    .oscar-hvac-page .oh-hero-inner {
+      padding: 82px 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(330px, .65fr);
+      gap: 52px;
+      align-items: center;
+    }
+
+    .oscar-hvac-page .oh-hero-copy {
+      max-width: 680px;
+    }
+
+    .oscar-hvac-page .oh-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 11px;
+      margin-bottom: 18px;
+      background: rgba(255,255,255,.11);
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .oscar-hvac-page .oh-hero h1 {
+      margin: 0;
+      font-size: clamp(40px, 5.2vw, 64px);
+      line-height: 1.02;
+      letter-spacing: -.035em;
+      max-width: 760px;
+    }
+
+    .oscar-hvac-page .oh-hero-copy > p {
+      margin: 20px 0 0;
+      font-size: 19px;
+      color: #edf4f8;
+      max-width: 620px;
+    }
+
+    .oscar-hvac-page .oh-trust-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      padding: 0;
+      margin: 24px 0 0;
+      list-style: none;
+      color: #f5f9fc;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .oscar-hvac-page .oh-trust-list li::before {
+      content: "✓";
+      margin-right: 7px;
+      color: #8bd2ff;
+      font-weight: 900;
+    }
+
+    .oscar-hvac-page .oh-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .oscar-hvac-page .oh-hero .oh-btn--secondary {
+      background: transparent;
+      color: var(--oh-white);
+      border-color: rgba(255,255,255,.65);
+    }
+
+    .oscar-hvac-page .oh-hero .oh-btn--secondary:hover {
+      background: rgba(255,255,255,.1);
+      color: var(--oh-white);
+      border-color: var(--oh-white);
+    }
+
+    .oscar-hvac-page .oh-form-card {
+      background: var(--oh-white);
+      color: var(--oh-text);
+      border-radius: var(--oh-radius);
+      box-shadow: var(--oh-shadow);
+      padding: 26px;
+    }
+
+    .oscar-hvac-page .oh-form-card h2 {
+      margin: 0;
+      color: var(--oh-navy);
+      font-size: 25px;
+      line-height: 1.1;
+    }
+
+    .oscar-hvac-page .oh-form-card > p {
+      margin: 8px 0 18px;
+      color: var(--oh-muted);
+      font-size: 14px;
+    }
+
+    .oscar-hvac-page .oh-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .oscar-hvac-page .oh-field--full {
+      grid-column: 1 / -1;
+    }
+
+    .oscar-hvac-page .oh-field label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 13px;
+      color: #334454;
+      font-weight: 800;
+    }
+
+    .oscar-hvac-page .oh-field input,
+    .oscar-hvac-page .oh-field select,
+    .oscar-hvac-page .oh-field textarea {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid #cbd7df;
+      border-radius: 6px;
+      background: var(--oh-white);
+      color: var(--oh-text);
+      padding: 10px 12px;
+    }
+
+    .oscar-hvac-page .oh-field textarea {
+      min-height: 86px;
+      resize: vertical;
+    }
+
+    .oscar-hvac-page .oh-form-card .oh-btn {
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .oscar-hvac-page .oh-form-note {
+      margin: 10px 0 0 !important;
+      font-size: 12px !important;
+      color: #71808d !important;
+      text-align: center;
+    }
+
+    /* TRUST BAR */
+    .oscar-hvac-page .oh-proof {
+      border-bottom: 1px solid var(--oh-line);
+      background: var(--oh-white);
+    }
+
+    .oscar-hvac-page .oh-proof-grid {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: stretch;
+    }
+
+    .oscar-hvac-page .oh-proof-item {
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid var(--oh-line);
+    }
+
+    .oscar-hvac-page .oh-proof-item:last-child {
+      border-right: 0;
+    }
+
+    .oscar-hvac-page .oh-proof-item strong {
+      color: var(--oh-navy);
+      font-size: 16px;
+    }
+
+    .oscar-hvac-page .oh-proof-item span {
+      margin-top: 2px;
+      color: var(--oh-muted);
+      font-size: 13px;
+    }
+
+    /* CARDS / SERVICES */
+    .oscar-hvac-page .oh-cards {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .oscar-hvac-page .oh-card {
+      padding: 25px;
+      border: 1px solid var(--oh-line);
+      border-radius: var(--oh-radius);
+      background: var(--oh-white);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .oscar-hvac-page .oh-card:hover {
+      transform: translateY(-2px);
+      border-color: #b9cad7;
+      box-shadow: 0 10px 22px rgba(15,47,79,.07);
+    }
+
+    .oscar-hvac-page .oh-card-image {
+      width: 100%;
+      height: 210px;
+      margin: -25px -25px 20px;
+      width: calc(100% + 50px);
+      overflow: hidden;
+      border-radius: var(--oh-radius) var(--oh-radius) 0 0;
+      background: var(--oh-light);
+    }
+
+    .oscar-hvac-page .oh-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .25s ease;
+    }
+
+    .oscar-hvac-page .oh-card:hover .oh-card-image img {
+      transform: scale(1.025);
+    }
+
+    .oscar-hvac-page .oh-card-icon {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: var(--oh-blue-soft);
+      color: var(--oh-blue);
+      font-weight: 900;
+      font-size: 19px;
+    }
+
+    .oscar-hvac-page .oh-card h3 {
+      margin: 0;
+      color: var(--oh-navy);
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .oscar-hvac-page .oh-card p {
+      margin: 9px 0 0;
+      color: var(--oh-muted);
+      font-size: 15px;
+    }
+
+    /* PROBLEM / BENEFIT */
+    .oscar-hvac-page .oh-split {
+      display: grid;
+      grid-template-columns: minmax(250px, .72fr) minmax(0, 1fr);
+      gap: 58px;
+      align-items: center;
+    }
+
+    .oscar-hvac-page .oh-photo {
+      min-height: 290px;
+      overflow: hidden;
+      border-radius: var(--oh-radius);
+      box-shadow: var(--oh-shadow);
+    }
+
+    .oscar-hvac-page .oh-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 290px;
+      object-fit: cover;
+    }
+
+    .oscar-hvac-page .oh-checks {
+      list-style: none;
+      padding: 0;
+      margin: 26px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px 18px;
+    }
+
+    .oscar-hvac-page .oh-checks li {
+      color: #344453;
+      font-weight: 700;
+    }
+
+    .oscar-hvac-page .oh-checks li::before {
+      content: "✓";
+      color: var(--oh-blue);
+      margin-right: 8px;
+      font-weight: 900;
+    }
+
+    /* WHY CHOOSE / PROCESS */
+    .oscar-hvac-page .oh-reasons {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .oscar-hvac-page .oh-reason {
+      padding: 22px 0 0;
+      border-top: 3px solid var(--oh-blue);
+    }
+
+    .oscar-hvac-page .oh-reason h3 {
+      margin: 0;
+      color: var(--oh-navy);
+      font-size: 19px;
+    }
+
+    .oscar-hvac-page .oh-reason p {
+      margin: 8px 0 0;
+      color: var(--oh-muted);
+      font-size: 15px;
+    }
+
+    .oscar-hvac-page .oh-steps {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      counter-reset: steps;
+    }
+
+    .oscar-hvac-page .oh-step {
+      counter-increment: steps;
+      padding: 26px;
+      background: var(--oh-white);
+      border: 1px solid var(--oh-line);
+      border-radius: var(--oh-radius);
+    }
+
+    .oscar-hvac-page .oh-step::before {
+      content: counter(steps);
+      width: 36px;
+      height: 36px;
+      margin-bottom: 16px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--oh-navy);
+      color: var(--oh-white);
+      font-weight: 900;
+    }
+
+    .oscar-hvac-page .oh-step h3 {
+      margin: 0;
+      color: var(--oh-navy);
+      font-size: 19px;
+    }
+
+    .oscar-hvac-page .oh-step p {
+      margin: 8px 0 0;
+      color: var(--oh-muted);
+      font-size: 15px;
+    }
+
+    /* REVIEWS */
+    .oscar-hvac-page .oh-review-grid {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .oscar-hvac-page .oh-review {
+      padding: 24px;
+      border: 1px solid var(--oh-line);
+      border-radius: var(--oh-radius);
+      background: var(--oh-white);
+    }
+
+    .oscar-hvac-page .oh-stars {
+      color: #e29a16;
+      letter-spacing: 2px;
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .oscar-hvac-page .oh-review blockquote {
+      margin: 16px 0 18px;
+      color: #334454;
+      font-size: 16px;
+    }
+
+    .oscar-hvac-page .oh-review cite {
+      color: var(--oh-navy);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .oscar-hvac-page .oh-review small {
+      display: block;
+      margin-top: 2px;
+      color: var(--oh-muted);
+    }
+
+    .oscar-hvac-page .oh-review-note {
+      margin-top: 18px;
+      color: var(--oh-muted);
+      font-size: 13px;
+    }
+
+    /* SERVICE AREA */
+    .oscar-hvac-page .oh-area-box {
+      padding: 34px;
+      background: var(--oh-navy);
+      color: var(--oh-white);
+      border-radius: var(--oh-radius);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .oscar-hvac-page .oh-area-box h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.08;
+    }
+
+    .oscar-hvac-page .oh-area-box p {
+      margin: 10px 0 0;
+      color: #dce8ef;
+      max-width: 700px;
+    }
+
+    /* FAQ */
+    .oscar-hvac-page .oh-faq-list {
+      margin-top: 30px;
+      border-top: 1px solid var(--oh-line);
+    }
+
+    .oscar-hvac-page .oh-faq-item {
+      border-bottom: 1px solid var(--oh-line);
+    }
+
+    .oscar-hvac-page .oh-faq-question {
+      width: 100%;
+      padding: 19px 4px;
+      border: 0;
+      background: transparent;
+      color: var(--oh-navy);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      text-align: left;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .oscar-hvac-page .oh-faq-question::after {
+      content: "+";
+      flex: 0 0 auto;
+      font-size: 23px;
+      font-weight: 500;
+      color: var(--oh-blue);
+    }
+
+    .oscar-hvac-page .oh-faq-question[aria-expanded="true"]::after {
+      content: "−";
+    }
+
+    .oscar-hvac-page .oh-faq-answer {
+      padding: 0 4px 20px;
+      color: var(--oh-muted);
+      max-width: 850px;
+    }
+
+    .oscar-hvac-page .oh-faq-answer[hidden] {
+      display: none;
+    }
+
+    /* FINAL CTA */
+    .oscar-hvac-page .oh-final-cta {
+      background: var(--oh-blue-soft);
+    }
+
+    .oscar-hvac-page .oh-final-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 34px;
+      padding: 42px;
+      border: 1px solid #cfe2ef;
+      border-radius: var(--oh-radius);
+      background: var(--oh-white);
+    }
+
+    .oscar-hvac-page .oh-final-box h2 {
+      margin: 0;
+      color: var(--oh-navy);
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.08;
+    }
+
+    .oscar-hvac-page .oh-final-box p {
+      margin: 10px 0 0;
+      color: var(--oh-muted);
+    }
+
+    .oscar-hvac-page .oh-final-actions {
+      display: flex;
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+
+    /* FOOTER */
+    .oscar-hvac-page .oh-footer {
+      background: #0b2239;
+      color: #dce7ef;
+      padding: 46px 0 26px;
+    }
+
+    .oscar-hvac-page .oh-footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .8fr .9fr;
+      gap: 42px;
+    }
+
+    .oscar-hvac-page .oh-footer .oh-brand {
+      color: var(--oh-white);
+    }
+
+    .oscar-hvac-page .oh-footer p {
+      color: #aebdca;
+      max-width: 480px;
+    }
+
+    .oscar-hvac-page .oh-footer h3 {
+      margin: 0 0 12px;
+      color: var(--oh-white);
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+
+    .oscar-hvac-page .oh-footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 9px;
+      font-size: 14px;
+    }
+
+    .oscar-hvac-page .oh-footer a:hover {
+      color: var(--oh-white);
+    }
+
+    .oscar-hvac-page .oh-footer-bottom {
+      margin-top: 36px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #93a5b4;
+      font-size: 12px;
+    }
+
+    /* MOBILE STICKY CTA */
+    .oscar-hvac-page .oh-mobile-cta {
+      display: none;
+    }
+
+    @media (max-width: 980px) {
+      .oscar-hvac-page .oh-nav {
+        position: absolute;
+        inset: 74px 20px auto 20px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px;
+        border: 1px solid var(--oh-line);
+        border-radius: 8px;
+        background: var(--oh-white);
+        box-shadow: var(--oh-shadow);
+      }
+
+      .oscar-hvac-page .oh-nav.is-open {
+        display: flex;
+      }
+
+      .oscar-hvac-page .oh-nav a:not(.oh-btn) {
+        padding: 12px 10px;
+      }
+
+      .oscar-hvac-page .oh-menu-toggle {
+        display: inline-flex;
+      }
+
+      .oscar-hvac-page .oh-hero {
+        background:
+          linear-gradient(rgba(15,47,79,.90), rgba(15,47,79,.90)),
+          url("https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&w=1400") center / cover no-repeat;
+      }
+
+      .oscar-hvac-page .oh-hero-inner,
+      .oscar-hvac-page .oh-split {
+        grid-template-columns: 1fr;
+      }
+
+      .oscar-hvac-page .oh-form-card {
+        max-width: 720px;
+      }
+
+      .oscar-hvac-page .oh-cards,
+      .oscar-hvac-page .oh-review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .oscar-hvac-page .oh-reasons {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .oscar-hvac-page .oh-proof-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .oscar-hvac-page .oh-proof-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .oscar-hvac-page .oh-proof-item:nth-child(-n+2) {
+        border-bottom: 1px solid var(--oh-line);
+      }
+
+      .oscar-hvac-page .oh-footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .oscar-hvac-page {
+        padding-bottom: 62px;
+      }
+
+      .oscar-hvac-page .oh-container {
+        width: min(100% - 28px, var(--oh-max));
+      }
+
+      .oscar-hvac-page .oh-section {
+        padding: 54px 0;
+      }
+
+      .oscar-hvac-page .oh-topbar-inner {
+        min-height: 42px;
+        justify-content: center;
+      }
+
+      .oscar-hvac-page .oh-topbar-list span:first-child {
+        display: none;
+      }
+
+      .oscar-hvac-page .oh-header-inner {
+        min-height: 68px;
+      }
+
+      .oscar-hvac-page .oh-brand-text {
+        font-size: 16px;
+      }
+
+      .oscar-hvac-page .oh-nav {
+        inset: 68px 14px auto 14px;
+      }
+
+      .oscar-hvac-page .oh-hero {
+        min-height: auto;
+      }
+
+      .oscar-hvac-page .oh-hero-inner {
+        padding: 56px 0 48px;
+        gap: 34px;
+      }
+
+      .oscar-hvac-page .oh-hero h1 {
+        font-size: clamp(36px, 12vw, 49px);
+      }
+
+      .oscar-hvac-page .oh-hero-copy > p {
+        font-size: 17px;
+      }
+
+      .oscar-hvac-page .oh-hero-actions,
+      .oscar-hvac-page .oh-final-actions {
+        flex-direction: column;
+      }
+
+      .oscar-hvac-page .oh-hero-actions .oh-btn,
+      .oscar-hvac-page .oh-final-actions .oh-btn {
+        width: 100%;
+      }
+
+      .oscar-hvac-page .oh-form-card {
+        padding: 20px;
+      }
+
+      .oscar-hvac-page .oh-form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .oscar-hvac-page .oh-field--full {
+        grid-column: auto;
+      }
+
+      .oscar-hvac-page .oh-cards,
+      .oscar-hvac-page .oh-review-grid,
+      .oscar-hvac-page .oh-reasons,
+      .oscar-hvac-page .oh-steps,
+      .oscar-hvac-page .oh-footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .oscar-hvac-page .oh-checks {
+        grid-template-columns: 1fr;
+      }
+
+      .oscar-hvac-page .oh-photo,
+      .oscar-hvac-page .oh-photo img {
+        min-height: 210px;
+      }
+
+      .oscar-hvac-page .oh-area-box,
+      .oscar-hvac-page .oh-final-box {
+        grid-template-columns: 1fr;
+        display: grid;
+        padding: 28px;
+      }
+
+      .oscar-hvac-page .oh-footer-bottom {
+        flex-direction: column;
+      }
+
+      .oscar-hvac-page .oh-mobile-cta {
+        position: fixed;
+        z-index: 200;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 62px;
+        padding: 7px max(12px, env(safe-area-inset-left)) calc(7px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-right));
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        gap: 8px;
+        background: var(--oh-white);
+        border-top: 1px solid var(--oh-line);
+        box-shadow: 0 -8px 22px rgba(15,47,79,.12);
+      }
+
+      .oscar-hvac-page .oh-mobile-cta .oh-btn {
+        min-height: 48px;
+        padding-inline: 10px;
+      }
+
+
+      .oscar-hvac-page .oh-hero-copy,
+      .oscar-hvac-page .oh-form-card,
+      .oscar-hvac-page .oh-section .oh-container > .oh-kicker,
+      .oscar-hvac-page .oh-section .oh-container > .oh-heading,
+      .oscar-hvac-page .oh-section .oh-container > .oh-lead {
+        text-align: center;
+      }
+
+      .oscar-hvac-page .oh-hero-copy {
+        margin-inline: auto;
+      }
+
+      .oscar-hvac-page .oh-hero-actions,
+      .oscar-hvac-page .oh-trust-list {
+        justify-content: center;
+      }
+
+      .oscar-hvac-page .oh-form-card {
+        margin-inline: auto;
+      }
+
+      .oscar-hvac-page .oh-card,
+      .oscar-hvac-page .oh-reason,
+      .oscar-hvac-page .oh-step,
+      .oscar-hvac-page .oh-review {
+        text-align: center;
+      }
+
+      .oscar-hvac-page .oh-checks {
+        justify-items: center;
+      }
+
+      .oscar-hvac-page .oh-area-box,
+      .oscar-hvac-page .oh-final-box {
+        text-align: center;
+      }
+
+      .oscar-hvac-page .oh-area-box .oh-btn,
+      .oscar-hvac-page .oh-final-actions {
+        margin-inline: auto;
+      }
+
+      .oscar-hvac-page .oh-footer,
+      .oscar-hvac-page .oh-footer .oh-brand,
+      .oscar-hvac-page .oh-footer-grid {
+        text-align: center;
+      }
+
+      .oscar-hvac-page .oh-footer .oh-brand {
+        justify-content: center;
+      }
+
+      .oscar-hvac-page .oh-footer p {
+        margin-inline: auto;
+      }
+
+      .oscar-hvac-page .oh-footer-bottom {
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .oscar-hvac-page .oh-proof-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .oscar-hvac-page .oh-proof-item,
+      .oscar-hvac-page .oh-proof-item:nth-child(2) {
+        border-right: 0;
+        border-bottom: 1px solid var(--oh-line);
+      }
+
+      .oscar-hvac-page .oh-proof-item:last-child {
+        border-bottom: 0;
+      }
+    }
+
+
+    /* EXTRA HOVER POLISH */
+    .oscar-hvac-page .oh-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .oscar-hvac-page .oh-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 3px;
+      background: var(--oh-orange);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .22s ease;
+    }
+
+    .oscar-hvac-page .oh-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .oscar-hvac-page .oh-reason {
+      transition: transform .18s ease, border-color .18s ease;
+    }
+
+    .oscar-hvac-page .oh-reason:hover {
+      transform: translateY(-3px);
+      border-color: var(--oh-orange);
+    }
+
+    .oscar-hvac-page .oh-step {
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .oscar-hvac-page .oh-step:hover {
+      transform: translateY(-3px);
+      border-color: #b9cad7;
+      box-shadow: 0 10px 22px rgba(15,47,79,.08);
+    }
+
+    .oscar-hvac-page .oh-review {
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .oscar-hvac-page .oh-review:hover {
+      transform: translateY(-3px);
+      border-color: #b9cad7;
+      box-shadow: 0 10px 22px rgba(15,47,79,.08);
+    }
+
+    .oscar-hvac-page .oh-area-box,
+    .oscar-hvac-page .oh-final-box {
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .oscar-hvac-page .oh-area-box:hover,
+    .oscar-hvac-page .oh-final-box:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(15,47,79,.10);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .oscar-hvac-page *,
+      .oscar-hvac-page *::before,
+      .oscar-hvac-page *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .001ms !important;
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "Oscar's HVAC Service",
+    "telephone": "+1-919-480-3430",
+    "url": "https://www.oscarshvacservice.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1002 Southshore Pkwy",
+      "addressLocality": "Durham",
+      "addressRegion": "NC",
+      "postalCode": "27703",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Durham"
+    }
+  }
+  </script>
+</head>
+
+<body style="margin:0">
+<div class="oscar-hvac-page" id="top">
+
+  <!-- =======================================================
+       TOP CONTACT BAR
+       ======================================================= -->
+  <div class="oh-topbar">
+    <div class="oh-container oh-topbar-inner">
+      <div class="oh-topbar-list" aria-label="Business contact summary">
+        <span>Heating & Cooling Service in Durham, NC</span>
+        <a href="tel:+19194803430" aria-label="Call Oscar's HVAC Service at 919-480-3430">(919) 480-3430</a>
+      </div>
+      <span>1002 Southshore Pkwy, Durham, NC 27703</span>
+    </div>
+  </div>
+
+  <!-- =======================================================
+       HEADER
+       ======================================================= -->
+  <header class="oh-header" aria-label="Main header">
+    <div class="oh-container oh-header-inner">
+      <a class="oh-brand" href="#top" aria-label="Oscar's HVAC Service home">
+        <svg class="oh-brand-mark" viewBox="0 0 48 48" role="img" aria-label="Oscar's HVAC Service logo mark">
+          <rect width="48" height="48" rx="9" fill="#0f2f4f"/>
+          <path d="M24 9v30M11 16.5l26 15M11 31.5l26-15M18.8 12.2 24 17.4l5.2-5.2M18.8 35.8 24 30.6l5.2 5.2M11.8 22.5l7.1 1.9-1.9 7.1M36.2 25.5l-7.1-1.9 1.9-7.1" stroke="#8bd2ff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="24" cy="24" r="4.4" fill="#e87924"/>
+        </svg>
+        <span class="oh-brand-text">Oscar's HVAC Service</span>
+      </a>
+
+      <button class="oh-menu-toggle" type="button" aria-expanded="false" aria-controls="oh-main-nav" aria-label="Open navigation">
+        <span class="oh-menu-icon" aria-hidden="true"></span>
+      </button>
+
+      <nav class="oh-nav" id="oh-main-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Choose Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="oh-btn oh-btn--primary" href="tel:+19194803430">Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================
+         HERO
+         ======================================================= -->
+    <section class="oh-hero" aria-labelledby="oh-hero-title">
+      <div class="oh-container oh-hero-inner">
+        <div class="oh-hero-copy">
+          <div class="oh-hero-badge">Local HVAC Service • Durham, North Carolina</div>
+          <h1 id="oh-hero-title">Reliable Heating & Cooling Help When You Need It</h1>
+          <p>Contact Oscar's HVAC Service for residential heating and air conditioning repair, maintenance, and system installation in Durham.</p>
+
+          <ul class="oh-trust-list" aria-label="Service highlights">
+            <li>Heating & Cooling Service</li>
+            <li>Maintenance & Repair</li>
+            <li>HVAC Installation</li>
+          </ul>
+
+          <div class="oh-hero-actions">
+            <a class="oh-btn oh-btn--primary" href="#contact">Request HVAC Service</a>
+            <a class="oh-btn oh-btn--secondary" href="tel:+19194803430">Call (919) 480-3430</a>
+          </div>
+        </div>
+
+        <!-- FORM / GHL FORM REPLACEMENT AREA -->
+        <div class="oh-form-card" id="contact">
+          <h2>Request HVAC Service</h2>
+          <p>Tell us how to reach you and what you need help with.</p>
+
+          <!-- GHL FORM EMBED CAN BE INSERTED HERE -->
+          <form class="oh-service-form" action="#" method="post" novalidate>
+            <div class="oh-form-grid">
+              <div class="oh-field">
+                <label for="oh-name">Full Name</label>
+                <input id="oh-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="oh-field">
+                <label for="oh-phone">Phone Number</label>
+                <input id="oh-phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="oh-field oh-field--full">
+                <label for="oh-email">Email Address</label>
+                <input id="oh-email" name="email" type="email" autocomplete="email">
+              </div>
+              <div class="oh-field oh-field--full">
+                <label for="oh-service">Service Needed</label>
+                <select id="oh-service" name="service">
+                  <option value="">Select a service</option>
+                  <option>Heating / Cooling Repair</option>
+                  <option>HVAC Maintenance</option>
+                  <option>HVAC Installation</option>
+                  <option>System Troubleshooting</option>
+                  <option>Other HVAC Service</option>
+                </select>
+              </div>
+              <div class="oh-field oh-field--full">
+                <label for="oh-message">Message</label>
+                <textarea id="oh-message" name="message" placeholder="Tell us what your system is doing."></textarea>
+              </div>
+            </div>
+            <button class="oh-btn oh-btn--primary" type="submit">Request Service</button>
+            <p class="oh-form-note">Developer note: replace this temporary form with your native GHL form or calendar embed before publishing.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / SOCIAL PROOF BAR -->
+    <section class="oh-proof" aria-label="Business trust highlights">
+      <div class="oh-container oh-proof-grid">
+        <div class="oh-proof-item">
+          <strong>Durham, NC</strong>
+          <span>Local heating & cooling service</span>
+        </div>
+        <div class="oh-proof-item">
+          <strong>(919) 480-3430</strong>
+          <span>Call to request service</span>
+        </div>
+        <div class="oh-proof-item">
+          <strong>Google Reviews</strong>
+          <span>[VERIFY CURRENT RATING & REVIEW COUNT]</span>
+        </div>
+        <div class="oh-proof-item">
+          <strong>Residential HVAC</strong>
+          <span>Repair, maintenance & installation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SERVICES
+         ======================================================= -->
+    <section class="oh-section" id="services">
+      <div class="oh-container">
+        <p class="oh-kicker">HVAC Services</p>
+        <h2 class="oh-heading">Heating & Cooling Service for Your Home</h2>
+        <p class="oh-lead">Straightforward help for common HVAC problems, routine maintenance, and equipment installation.</p>
+
+        <div class="oh-cards">
+          <article class="oh-card">
+            <div class="oh-card-image">
+              <img
+                src="https://images.pexels.com/photos/5463580/pexels-photo-5463580.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="HVAC technician servicing an air conditioning system"
+                width="900"
+                height="600"
+                loading="lazy">
+            </div>
+            <h3>Air Conditioning Service</h3>
+            <p>Diagnosis and repair for cooling problems, weak airflow, and AC systems that are not keeping your home comfortable.</p>
+          </article>
+
+          <article class="oh-card">
+            <div class="oh-card-image">
+              <img
+                src="https://images.pexels.com/photos/5463576/pexels-photo-5463576.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Technician inspecting residential heating and cooling equipment"
+                width="900"
+                height="600"
+                loading="lazy">
+            </div>
+            <h3>Heating Service</h3>
+            <p>Heating-system troubleshooting and service when your home is not warming properly or your system is not operating as expected.</p>
+          </article>
+
+          <article class="oh-card">
+            <div class="oh-card-image">
+              <img
+                src="https://images.pexels.com/photos/4489734/pexels-photo-4489734.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Technician performing HVAC maintenance"
+                width="900"
+                height="600"
+                loading="lazy">
+            </div>
+            <h3>HVAC Maintenance</h3>
+            <p>Routine heating and cooling maintenance to help catch issues early and keep your system operating properly.</p>
+          </article>
+
+          <article class="oh-card">
+            <div class="oh-card-image">
+              <img
+                src="https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="HVAC equipment being installed in a home"
+                width="900"
+                height="600"
+                loading="lazy">
+            </div>
+            <h3>HVAC Installation</h3>
+            <p>Installation support for residential heating and air conditioning equipment when it is time for a new system.</p>
+          </article>
+
+          <article class="oh-card">
+            <div class="oh-card-image">
+              <img
+                src="https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="HVAC technician diagnosing a residential system"
+                width="900"
+                height="600"
+                loading="lazy">
+            </div>
+            <h3>System Troubleshooting</h3>
+            <p>Professional evaluation when your HVAC system will not start, makes unusual noises, or is not performing correctly.</p>
+          </article>
+
+          <article class="oh-card">
+            <div class="oh-card-image">
+              <img
+                src="https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Homeowner discussing a home service issue with a technician"
+                width="900"
+                height="600"
+                loading="lazy">
+            </div>
+            <h3>Not Sure What You Need?</h3>
+            <p>Describe the issue when you call or submit the service form, and Oscar's HVAC Service can help determine the next step.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / BENEFIT SECTION -->
+    <section class="oh-section oh-section--light">
+      <div class="oh-container oh-split">
+        <div class="oh-photo">
+          <img
+            src="https://images.pexels.com/photos/5463580/pexels-photo-5463580.jpeg?auto=compress&cs=tinysrgb&w=1100"
+            alt="HVAC technician working on an air conditioning unit"
+            width="900"
+            height="1100"
+            loading="lazy">
+        </div>
+
+        <div>
+          <p class="oh-kicker">When Something Feels Off</p>
+          <h2 class="oh-heading">Having Trouble With Your Heating or Cooling?</h2>
+          <p class="oh-lead">HVAC problems can get uncomfortable fast. Request service when your system is not working the way it should.</p>
+
+          <ul class="oh-checks">
+            <li>AC is not cooling</li>
+            <li>Weak airflow</li>
+            <li>System will not turn on</li>
+            <li>Strange system noises</li>
+            <li>Uneven temperatures</li>
+            <li>Heating is not working</li>
+          </ul>
+
+          <a class="oh-btn oh-btn--primary" href="#contact">Request HVAC Service</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE OSCAR'S HVAC SERVICE -->
+    <section class="oh-section" id="why-us">
+      <div class="oh-container">
+        <p class="oh-kicker">Why Choose Oscar's HVAC Service</p>
+        <h2 class="oh-heading">Simple, Local HVAC Help</h2>
+        <p class="oh-lead">Public customer feedback consistently highlights responsiveness, professionalism, and clear explanations.</p>
+
+        <div class="oh-reasons">
+          <div class="oh-reason">
+            <h3>Straightforward Service</h3>
+            <p>Clear communication about the problem and the work being recommended.</p>
+          </div>
+          <div class="oh-reason">
+            <h3>Local Service</h3>
+            <p>Heating and cooling service based in Durham, North Carolina.</p>
+          </div>
+          <div class="oh-reason">
+            <h3>Responsive Help</h3>
+            <p>Customer reviews frequently mention prompt communication and service.</p>
+          </div>
+          <div class="oh-reason">
+            <h3>Customer-Focused</h3>
+            <p>A practical service process from the first call through the next step for your HVAC system.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="oh-section oh-section--light">
+      <div class="oh-container">
+        <p class="oh-kicker">How It Works</p>
+        <h2 class="oh-heading">Get HVAC Help in 3 Simple Steps</h2>
+
+        <div class="oh-steps">
+          <div class="oh-step">
+            <h3>Request Service</h3>
+            <p>Call (919) 480-3430 or submit the service request form.</p>
+          </div>
+          <div class="oh-step">
+            <h3>Schedule Your Visit</h3>
+            <p>Coordinate a convenient time to have your heating or cooling issue evaluated.</p>
+          </div>
+          <div class="oh-step">
+            <h3>Get the Next Step</h3>
+            <p>Your HVAC problem is evaluated and you receive a recommendation for the appropriate service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         REVIEWS
+         ======================================================= -->
+    <section class="oh-section" id="reviews">
+      <div class="oh-container">
+        <p class="oh-kicker">Customer Feedback</p>
+        <h2 class="oh-heading">What Customers Say About Oscar</h2>
+        <p class="oh-lead">Public review sources repeatedly mention professionalism, responsiveness, and practical HVAC help.</p>
+
+        <div class="oh-review-grid">
+          <article class="oh-review">
+            <div class="oh-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Oscar is responsive, professional, and helpful, and he does a great job.”</blockquote>
+            <cite>Valerie Lewis</cite>
+            <small>Google review excerpt surfaced by Birdeye</small>
+          </article>
+
+          <article class="oh-review">
+            <div class="oh-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Oscar came right in and handle my problem. Was very professional and knows his stuff.”</blockquote>
+            <cite>Public customer review</cite>
+            <small>Review excerpt surfaced by Find HVAC Repair</small>
+          </article>
+
+          <article class="oh-review">
+            <div class="oh-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Very prompt!”</blockquote>
+            <cite>Tomorrow Papaleo</cite>
+            <small>Public customer review surfaced by Find HVAC Repair</small>
+          </article>
+        </div>
+
+        <p class="oh-review-note">Before publishing, verify the live Google Business rating, review count, and exact review excerpts against the current Google listing.</p>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section class="oh-section oh-section--light" id="service-area">
+      <div class="oh-container">
+        <div class="oh-area-box">
+          <div>
+            <h2>HVAC Service in Durham, NC</h2>
+            <p>Oscar's HVAC Service is publicly listed at 1002 Southshore Pkwy, Durham, NC 27703. Call to confirm availability for your exact address.</p>
+          </div>
+          <a class="oh-btn oh-btn--primary" href="tel:+19194803430">Call (919) 480-3430</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         FAQ
+         ======================================================= -->
+    <section class="oh-section" id="faq">
+      <div class="oh-container">
+        <p class="oh-kicker">Frequently Asked Questions</p>
+        <h2 class="oh-heading">HVAC Service Questions</h2>
+
+        <div class="oh-faq-list">
+          <div class="oh-faq-item">
+            <button class="oh-faq-question" type="button" aria-expanded="false" aria-controls="oh-faq-1">
+              What HVAC services do you provide?
+            </button>
+            <div class="oh-faq-answer" id="oh-faq-1" hidden>
+              Oscar's HVAC Service is publicly described as providing residential heating and air conditioning service, maintenance, repair, and installation.
+            </div>
+          </div>
+
+          <div class="oh-faq-item">
+            <button class="oh-faq-question" type="button" aria-expanded="false" aria-controls="oh-faq-2">
+              How do I know whether my AC needs repair?
+            </button>
+            <div class="oh-faq-answer" id="oh-faq-2" hidden>
+              Common signs include warm air, weak airflow, unusual noises, uneven temperatures, or a system that will not start. A service visit can help identify the cause.
+            </div>
+          </div>
+
+          <div class="oh-faq-item">
+            <button class="oh-faq-question" type="button" aria-expanded="false" aria-controls="oh-faq-3">
+              Should I repair or replace my HVAC system?
+            </button>
+            <div class="oh-faq-answer" id="oh-faq-3" hidden>
+              The right choice depends on the system's condition, the problem, repair needs, and replacement options. Have the system evaluated before deciding.
+            </div>
+          </div>
+
+          <div class="oh-faq-item">
+            <button class="oh-faq-question" type="button" aria-expanded="false" aria-controls="oh-faq-4">
+              How often should an HVAC system be serviced?
+            </button>
+            <div class="oh-faq-answer" id="oh-faq-4" hidden>
+              Maintenance needs vary by system and manufacturer. Check your equipment documentation and schedule service when performance changes or routine maintenance is due.
+            </div>
+          </div>
+
+          <div class="oh-faq-item">
+            <button class="oh-faq-question" type="button" aria-expanded="false" aria-controls="oh-faq-5">
+              Why is my air conditioner running but not cooling?
+            </button>
+            <div class="oh-faq-answer" id="oh-faq-5" hidden>
+              Several issues can cause poor cooling, including airflow problems or equipment faults. A technician can inspect the system and identify the specific cause.
+            </div>
+          </div>
+
+          <div class="oh-faq-item">
+            <button class="oh-faq-question" type="button" aria-expanded="false" aria-controls="oh-faq-6">
+              How can I request service?
+            </button>
+            <div class="oh-faq-answer" id="oh-faq-6" hidden>
+              Call Oscar's HVAC Service at (919) 480-3430 or use the service request form on this page after the native GHL form is connected.
+            </div>
+          </div>
+
+          <div class="oh-faq-item">
+            <button class="oh-faq-question" type="button" aria-expanded="false" aria-controls="oh-faq-7">
+              What areas do you serve?
+            </button>
+            <div class="oh-faq-answer" id="oh-faq-7" hidden>
+              Oscar's HVAC Service is listed in Durham, North Carolina. Call (919) 480-3430 to confirm service availability for your exact location.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         FINAL CTA
+         ======================================================= -->
+    <section class="oh-section oh-final-cta">
+      <div class="oh-container">
+        <div class="oh-final-box">
+          <div>
+            <h2>Need Heating or Cooling Help?</h2>
+            <p>Contact Oscar's HVAC Service and request service for your home.</p>
+          </div>
+          <div class="oh-final-actions">
+            <a class="oh-btn oh-btn--primary" href="#contact">Request Service</a>
+            <a class="oh-btn oh-btn--secondary" href="tel:+19194803430">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================
+       FOOTER
+       ======================================================= -->
+  <footer class="oh-footer">
+    <div class="oh-container">
+      <div class="oh-footer-grid">
+        <div>
+          <a class="oh-brand" href="#top" aria-label="Oscar's HVAC Service home">
+            <svg class="oh-brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+              <rect width="48" height="48" rx="9" fill="#ffffff"/>
+              <path d="M24 9v30M11 16.5l26 15M11 31.5l26-15M18.8 12.2 24 17.4l5.2-5.2M18.8 35.8 24 30.6l5.2 5.2" stroke="#216da8" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+              <circle cx="24" cy="24" r="4.4" fill="#e87924"/>
+            </svg>
+            <span class="oh-brand-text">Oscar's HVAC Service</span>
+          </a>
+          <p>Residential heating and cooling service in Durham, North Carolina.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="oh-footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Request Service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul class="oh-footer-links">
+            <li><a href="tel:+19194803430">(919) 480-3430</a></li>
+            <li>1002 Southshore Pkwy<br>Durham, NC 27703</li>
+            <li>[VERIFY BUSINESS HOURS]</li>
+            <li><a href="https://maps.app.goo.gl/MKgEDfE6ksmA13ox8" target="_blank" rel="noopener">Google Business Listing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="oh-footer-bottom">
+        <span>© <span id="oh-year"></span> Oscar's HVAC Service. All rights reserved.</span>
+        <span>
+          <a href="#" aria-label="Privacy Policy placeholder">Privacy Policy</a>
+          &nbsp;•&nbsp;
+          <a href="#" aria-label="Terms placeholder">Terms</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="oh-mobile-cta" aria-label="Quick contact">
+    <a class="oh-btn oh-btn--secondary" href="tel:+19194803430">Call Now</a>
+    <a class="oh-btn oh-btn--primary" href="#contact">Request Service</a>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var root = document.querySelector(".oscar-hvac-page");
+  if (!root) return;
+
+  /* MOBILE NAVIGATION */
+  var menuButton = root.querySelector(".oh-menu-toggle");
+  var nav = root.querySelector("#oh-main-nav");
+
+  function closeMenu() {
+    if (!menuButton || !nav) return;
+    nav.classList.remove("is-open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Open navigation");
+  }
+
+  if (menuButton && nav) {
+    menuButton.addEventListener("click", function () {
+      var isOpen = nav.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+    });
+
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeMenu();
+    });
+  }
+
+  /* SMOOTH INTERNAL SCROLLING */
+  root.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      var targetId = link.getAttribute("href");
+      if (!targetId || targetId === "#") return;
+      var target = root.querySelector(targetId);
+      if (!target) return;
+
+      event.preventDefault();
+      target.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start"
+      });
+    });
+  });
+
+  /* FAQ ACCORDION */
+  root.querySelectorAll(".oh-faq-question").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var panelId = button.getAttribute("aria-controls");
+      var panel = root.querySelector("#" + panelId);
+      if (!panel) return;
+
+      var willOpen = button.getAttribute("aria-expanded") !== "true";
+
+      root.querySelectorAll(".oh-faq-question").forEach(function (otherButton) {
+        var otherPanelId = otherButton.getAttribute("aria-controls");
+        var otherPanel = root.querySelector("#" + otherPanelId);
+        otherButton.setAttribute("aria-expanded", "false");
+        if (otherPanel) otherPanel.hidden = true;
+      });
+
+      button.setAttribute("aria-expanded", String(willOpen));
+      panel.hidden = !willOpen;
+    });
+  });
+
+  /* TEMPORARY FORM HANDLER — REPLACE WITH NATIVE GHL FORM */
+  var form = root.querySelector(".oh-service-form");
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var name = root.querySelector("#oh-name");
+      var phone = root.querySelector("#oh-phone");
+
+      if (!name.value.trim() || !phone.value.trim()) {
+        alert("Please enter your name and phone number.");
+        return;
+      }
+
+      alert("This demo form is ready to be replaced with your native GoHighLevel form or calendar embed.");
+    });
+  }
+
+  /* FOOTER YEAR */
+  var year = root.querySelector("#oh-year");
+  if (year) year.textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
